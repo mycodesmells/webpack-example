@@ -14,7 +14,7 @@ app.get('/person', (req, res) => {
     let personData = {firstName: 'Adam', lastName: 'Smith', age: 23};
 
     var p = new Person(personData);
-    console.log("=== ON SERVER SIDE ===");
+    console.warn("=== ON SERVER SIDE ===");
     console.log(p.getFullName());
     console.log(p.isAdult());
     console.log("======================");

@@ -5,7 +5,7 @@ function fetchData(callback) {
         url: '/person',
         method: 'get',
         dataType: 'json',
-        success: (personData) => {
+        success: function(personData){
             callback(null, personData);
         },
         error: callback

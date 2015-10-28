@@ -1,10 +1,10 @@
 function Person(data) {
 
-    this.getFullName = () => {
+    this.getFullName = function () {
         return data.firstName + " " + data.lastName;
     };
 
-    this.isAdult = () => {
+    this.isAdult = function () {
         return data.age >= 18;
     };
 
